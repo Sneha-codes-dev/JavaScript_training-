@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing Dashboard</title>
+  <link rel="stylesheet" href="task8.css">
+</head>
+<body>
+
+   <p id="loader">Loading...</p>
+   
+  <div id="main" style="display:none;">
+  <input type="text" id="search" placeholder="Search products..." />
+ 
+  <button onclick="low()">Low → High</button>
+  <button onclick="high()">High → Low</button>
+
+  <select id="category">
+    <option value="all">ALL</option>
+    <option value="electronics">Electronics</option>
+    <option value="jewelery">Jewelery</option>
+    <option value="men's clothing">Men's clothing</option>
+    <option value="women's clothing">Women's clothing</option>
+  </select>
+
+  <div class="api"></div>
+
+  <div id="modal" style="display:none;">
+  <div id="modalContent">
+    <span id="closeBtn">X</span>
+    <h2 id="title"></h2>
+    <img id="image" />
+    <p id="description"></p>
+    <h3 id="price"></h3>
+  </div>
+</div>
+</div>
+ <script src="./task8.js"></script>
+
+</body>
+</html>
